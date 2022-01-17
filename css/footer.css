@@ -1,0 +1,11 @@
+#gmap_canvas {
+    width: 100%;
+    height: 50vh;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+

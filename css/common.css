@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: rgb(50, 206, 211);
+    --main-color: black;
+    font-family: 'DotGothic16', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 980px;
+    margin: auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
