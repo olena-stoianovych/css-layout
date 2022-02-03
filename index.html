@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -98,6 +98,91 @@
           <button class="button button-card">Submit</button>
         </form>
     </footer>
+</body>
+
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickerz</title>
+    <link rel="shortcut icon" href="img/baby-yoda.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <div class="header__nav-logo">Stickerz</div>
+                <label class="burger-icon" for="burger-checkbox">☰</label>
+                <input type="checkbox" id="burger-checkbox">
+                <div class="header__nav-menu">
+                    <a href="#home" class="header__nav-menu-item">Home</a>
+                    <a href="#products" class="header__nav-menu-item">Products</a>
+                    <a href="#contacts" class="header__nav-menu-item">Contacts</a>
+                    <a href="#cart" class="header__nav-menu-item">Cart</a>
+                    <a href="#" class="header__nav-menu-item clock"></a>
+                </div>
+            </nav>
+            <div class="header__banner">
+                <h1 class="header__banner-h1">Stickerz</h1>
+                <button class="header__banner-button button">Shop now</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="products container">
+            <h2>Product List</h2>
+            <div class="products__carousel">
+                <button class="products__carousel-back">←</button>
+                <div class="products__carousel-slide-container"></div>
+                <button class="products__carousel-forward">→</button>
+            </div>
+            <div>
+                <input type="text" class="currency" value="USD">
+                <button class="convert">Convert</button>
+            </div>
+            <div class="products__list"></div>
+        </section>
+    </main>
+    <footer id="contacts" class="footer container">
+        <h2>Contact Us</h2>
+        <iframe id="gmap_canvas" src="https://maps.google.com/maps?ll=28.5449756,77.1904397&q=Indian Institute of Technology Delhi&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <form class="contact-form-formspree" action="https://formspree.io/YOUR_ADDRESS" method="POST">
+            <label
+              >Your name:
+              <input type="text" name="user-name" placeholder="User Name" />
+            </label>
+            <label
+              >Your email:
+              <input type="email" name="user-email" placeholder="User Email" />
+            </label>
+            <input type="submit" />
+          </form>
+        <form class="contact-form-nodejs" action="contact" method="POST">
+            <label
+              >Your name:
+              <input type="text" name="user-name" placeholder="User Name" />
+            </label>
+            <label
+              >Your email:
+              <input type="email" name="user-email" placeholder="User Email" />
+            </label>
+            <input type="submit" />
+          </form>
+          <p class="contact-form-status"></p>
+    </footer>
+    <script src="js/clock.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/product-list.js"></script>
+    <script src="js/products-carousel.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/contact-form-formspree.js"></script>
 </body>
 
 </html>
